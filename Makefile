@@ -7,7 +7,7 @@ CXXFLAGS     += -Wall -g
 COBJS         = hid.o
 CCOBJS        = ptrim-lib.o
 
-LIBS          = -l curses
+LIBS          = -l curses -lpthread
 INCLUDES     += -I hidapi/ -I src/
 
 UNAME        := $(shell uname)
